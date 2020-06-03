@@ -5,11 +5,21 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@master
+    
+    - name: Use Node.js 14.x
+      uses: actions/setup-node@v1
+      with:
+        node-version: 14.x
+    
+    - name: npm install
+      run: npm install
+    
     - name: Fetch slideshow.author from httpbin.org
       id: fetchjson  
       uses: ./
       with:
         url: 'https://httpbin.org/json'
         property-path: slideshow.author
+
     - name: Echo slideshow.author's value
       run: echo ${{ steps.fetchjson.outputs.value }}
