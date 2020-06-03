@@ -1,0 +1,21 @@
+{
+  "name": "download-json-property-action",
+  "version": "1.0.0",
+  "description": "Download a JSON payload, extract the property you want, and expose it as a result to be used for the next step",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/senmu/download-json-property-action.git"
+  },
+  "keywords": [],
+  "author": "senmu",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/senmu/download-json-property-action/issues"
+  },
+  "homepage": "https://github.com/senmu/download-json-property-action#readme",
+  "dependencies": {
+    "@actions/core": "^1.2.4",
+    "object-path": "^0.11.4"
+  }
+}

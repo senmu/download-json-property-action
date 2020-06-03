@@ -1,0 +1,15 @@
+name: 'Download JSON property'
+description: 'Download a JSON payload, extract the property you want, and expose it as a result to be used for the next step'
+inputs:
+  url:
+    description: 'The URL of the json to fetch'
+    required: true
+  property-path:
+    description: 'The path of the property'
+    required: true
+outputs:
+  value:
+    description: 'The value of the property'
+runs:
+  using: 'node12'
+  main: 'index.js'
