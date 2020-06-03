@@ -4,6 +4,8 @@
   "description": "Download a JSON payload, extract the property you want, and expose it as a result to be used for the next step",
   "main": "index.js",
   "scripts": {
+    "lint": "eslint index.js",
+    "package": "ncc build index.js -o dist",
     "test": "eslint index.js && jest"
   },
   "repository": {
