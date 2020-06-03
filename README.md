@@ -5,7 +5,7 @@ Download a JSON payload, extract the property you want, and expose it as a resul
 Inside your `.github/workflows/workflow.yml` file:
 ```yaml
 steps:
-- uses: senmu/download-json-property-action@v1
+- uses: senmu/download-json-property-action@v1.1.0
   with:
     url: 'https://httpbin.org/json'
     property_path: slideshow.author
@@ -20,7 +20,7 @@ This action currently supports two inputs from the user: `url`, and `property-pa
 | `property_path`  | The path of the property you want to extract. Deeper properties nested in an object can be retrieved using dot notation thanks to [object-path](https://github.com/mariocasciaro/object-path). | Required |
 
 ## Output
-* `value`: The retrieved value that lives at the specified `property-path`
+* `value`: The retrieved value that lives at the specified `property_path`
 
 Below is an example of how to reference this value in a subsequent step.
 
@@ -45,7 +45,7 @@ jobs:
         run: npm test
     - name: Get code coverage from service
       id: fetch-coverage
-      uses: senmu/download-json-property-action@v1
+      uses: senmu/download-json-property-action@v1.1.0
         url: 'https://codecoverageservice.com/build/123.json'
         property_path: build.coverage
     - name: Add comment to PR with code coverage
