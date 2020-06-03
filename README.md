@@ -53,7 +53,7 @@ jobs:
       env:
       	GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       with:
-        msg: ${{ steps.fetch-coverage.value }}
+        msg: ${{ steps.fetch-coverage.outputs.value }}
 ```
 
 ## License
