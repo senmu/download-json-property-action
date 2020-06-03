@@ -8,7 +8,7 @@ steps:
 - uses: senmu/download-json-property-action@v1
   with:
     url: 'https://httpbin.org/json'
-    property-path: slideshow.author
+    property_path: slideshow.author
 ```
 
 ## Input Arguments
@@ -17,7 +17,7 @@ This action currently supports two inputs from the user: `url`, and `property-pa
 | Input  | Description | Usage |
 | :---:     |     :---:   |    :---:   |
 | `url`  | The URL of the JSON to fetch  | Required |
-| `property-path`  | The path of the property you want to extract. Deeper properties nested in an object can be retrieved using dot notation thanks to [object-path](https://github.com/mariocasciaro/object-path). | Required |
+| `property_path`  | The path of the property you want to extract. Deeper properties nested in an object can be retrieved using dot notation thanks to [object-path](https://github.com/mariocasciaro/object-path). | Required |
 
 ## Output
 * `value`: The retrieved value that lives at the specified `property-path`
@@ -47,7 +47,7 @@ jobs:
       id: fetch-coverage
       uses: senmu/download-json-property-action@v1
         url: 'https://codecoverageservice.com/build/123.json'
-        property-path: build.coverage
+        property_path: build.coverage
     - name: Add comment to PR with code coverage
       uses: unsplash/comment-on-pr@master
       env:

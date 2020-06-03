@@ -22,7 +22,7 @@ function getRequest(url) {
 async function run() {
     try {
         const jsonUrl = core.getInput('url');
-        const propertyPath = core.getInput('property-path');
+        const propertyPath = core.getInput('property_path');
 
         let response = await getRequest(jsonUrl);
         let obj = JSON.parse(response)

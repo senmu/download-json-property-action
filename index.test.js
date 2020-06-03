@@ -3,7 +3,7 @@ const cp = require('child_process');
 const path = require('path');
 
 test('integration test using httpbin.org', () => {
-    process.env["INPUT_PROPERTY-PATH"] = "slideshow.author";
+    process.env["INPUT_PROPERTY_PATH"] = "slideshow.author";
     process.env['INPUT_URL'] = "https://httpbin.org/json";
 
     const ip = path.join(__dirname, 'index.js');
