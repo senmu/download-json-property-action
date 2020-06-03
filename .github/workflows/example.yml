@@ -1,5 +1,8 @@
 name: Example workflow to exercise action
-on: [push, pull_request]
+on:
+  push:
+    branches:
+      - master
 jobs:
   run:
     runs-on: ubuntu-latest
