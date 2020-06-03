@@ -5,10 +5,11 @@ const objectPath = require('object-path');
 async function run() {
     try {
         const jsonUrl = core.getInput('url');
-        const property = core.getInput('property');
+        const property = core.getInput('property-path');
 
         core.debug(`Fetching ${jsonUrl}`);
         core.debug(`Property: ${property}`);
+
         let data = '';
         await https.get(jsonUrl, response => {
             response.on('data', chunk => {

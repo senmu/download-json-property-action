@@ -3,6 +3,9 @@
   "version": "1.0.0",
   "description": "Download a JSON payload, extract the property you want, and expose it as a result to be used for the next step",
   "main": "index.js",
+  "scripts": {
+    "test": "eslint index.js && jest"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/senmu/download-json-property-action.git"
@@ -17,5 +20,9 @@
   "dependencies": {
     "@actions/core": "^1.2.4",
     "object-path": "^0.11.4"
+  },
+  "devDependencies": {
+    "eslint": "^6.3.0",
+    "jest": "^24.9.0"
   }
 }
