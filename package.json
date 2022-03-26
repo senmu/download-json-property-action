@@ -20,11 +20,11 @@
   },
   "homepage": "https://github.com/senmu/download-json-property-action#readme",
   "dependencies": {
-    "@actions/core": "^1.2.6",
+    "@actions/core": "^1.6.0",
     "object-path": "^0.11.8"
   },
   "devDependencies": {
-    "eslint": "^6.3.0",
-    "jest": "^24.9.0"
+    "eslint": "^8.12.0",
+    "jest": "^27.5.1"
   }
 }
