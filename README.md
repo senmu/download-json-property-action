@@ -5,7 +5,7 @@ Download a JSON payload, extract the property you want, and expose it as a resul
 Inside your `.github/workflows/workflow.yml` file:
 ```yaml
 steps:
-- uses: senmu/download-json-property-action@v1.1.0
+- uses: senmu/download-json-property-action@v1.2.0
   with:
     url: 'https://httpbin.org/json'
     property_path: slideshow.author
