@@ -5,7 +5,7 @@ Download a JSON payload, extract the property you want, and expose it as a resul
 Inside your `.github/workflows/workflow.yml` file:
 ```yaml
 steps:
-- uses: senmu/download-json-property-action@v1.3.0
+- uses: senmu/download-json-property-action@v1.4.0
   with:
     url: 'https://httpbin.org/json'
     property_path: slideshow.author
@@ -45,7 +45,7 @@ jobs:
         run: npm test
     - name: Get code coverage from service
       id: fetch-coverage
-      uses: senmu/download-json-property-action@v1.3.0
+      uses: senmu/download-json-property-action@v1.4.0
       with:
         url: 'https://codecoverageservice.com/build/123.json'
         property_path: build.coverage
