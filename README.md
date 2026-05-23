@@ -45,7 +45,7 @@ jobs:
         run: npm test
     - name: Get code coverage from service
       id: fetch-coverage
-      uses: senmu/download-json-property-action@v1.5.0
+      uses: senmu/download-json-property-action@v1.7.0
       with:
         url: 'https://codecoverageservice.com/build/123.json'
         property_path: build.coverage
